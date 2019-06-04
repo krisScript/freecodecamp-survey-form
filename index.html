@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.scss" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">freeCodeCamp Survey Form Project</p>
+      <form class="survey-form" id="survey-form">
+        <div class="survey-form-input-container">
+          <label class="label" for="name" id="name-label">Name</label>
+          <input
+            class="input"
+            type="text"
+            placeholder="Enter your name"
+            id="name"
+            required
+          />
+        </div>
+        <div class="survey-form-input-container">
+          <label class="label" for="email" id="email-label">Email</label>
+          <input
+            class="input"
+            type="email"
+            placeholder="Enter your email"
+            id="email"
+            required
+          />
+        </div>
+        <div class="survey-form-input-container">
+          <label class="label" for="number" id="number-label">Age</label>
+          <input
+            class="input"
+            type="number"
+            placeholder="Enter your age"
+            id="number"
+            min="18"
+            max="80"
+            required
+          />
+        </div>
+        <div class="survey-form-input-container">
+          <select class="input" id="dropdown">
+            <option selected="selected">
+              What type of developer are you.
+            </option>
+            <option value="Front-end developer">Front-end developer</option>
+            <option value="Back-end developer">Back-end developer</option>
+            <option value="Full-stack developer">Full-stack developer</option>
+            <option value="Front-end developer">Front-end developer</option>
+            <option value="Mobile developer">Mobile developer</option>
+            <option value="Desktop or enterprise applications developer"
+              >Desktop or enterprise applications developer</option
+            >
+            <option value="Student">Student</option>
+          </select>
+        </div>
+        <div class="survey-form-input-container">
+          <p class="survey-form-question">
+            Have you contributed to Open Source
+          </p>
+          <ul class="buttons-list">
+            <li>
+              <input type="radio" name="openSource" value="never" id="never" />
+              <label class="label" for="never">Never</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="openSource"
+                value="oncePerYear"
+                id="oncePerYear"
+              />
+              <label class="label" for="oncePerYear">Once Per Year</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="openSource"
+                value="oncePerYear"
+                id="onceAMonth"
+              />
+              <label class="label" for="onceAMonth">Once A Month</label>
+            </li>
+          </ul>
+        </div>
+        <div class="survey-form-input-container">
+          <p class="survey-form-question">
+            Tehcnologies that you are instrested in
+          </p>
+          <ul class="buttons-list">
+            <li>
+              <input type="checkbox" value="Qraphql" />
+              <label class="label" for="oncePerYear">Qraphql</label>
+            </li>
+            <li>
+              <input type="checkbox" value="Python" />
+              <label class="label" for="oncePerYear">Python</label>
+            </li>
+            <li>
+              <input type="checkbox" value="Go" />
+              <label class="label" for="oncePerYear">Go</label>
+            </li>
+            <li>
+              <input type="checkbox" value="Rust" />
+              <label class="label" for="oncePerYear">Rust</label>
+            </li>
+          </ul>
+        </div>
+        <div class="survey-form-input-container">
+          <textarea
+            class="input"
+            placeholder="How can we make this survey better?"
+          ></textarea>
+        </div>
+        <button class="survey-form-button" id="submit">Submit</button>
+      </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
